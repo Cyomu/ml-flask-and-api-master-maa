@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+{{ super() }}
+<p>Линейная регрессия
+<form action="/p_lab1" method="POST">
+    <p><input type="text" class="form_text" name="list1"> телевизионная реклама</p>
+    <p><input type="text" class="form_text" name="list2"> реклама по радио</p>
+    <p><input type="text" class="form_text" name="list3"> реклама в газетах</p>
+    <input type="submit" class="form_btn" value="Получить: продажи">
+    <h1>{{class_model}}</h1>
+    <p>MSE: 0.3</p>
+    <p>MSPE: 0.014</p>
+    <p>MAPE: 0.02</p>
+    </p>
+</form>
+
+{% endblock %}
